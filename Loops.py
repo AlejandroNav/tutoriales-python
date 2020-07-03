@@ -3,7 +3,7 @@ i=1
 while i<=3:
     print(i)
     i += 1
-print("termina el loop ")
+print("termina el loop aqui")
 
 secret_word = "CUATRO"
 guess = ""
