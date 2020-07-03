@@ -1,10 +1,18 @@
-print(3)
-
-num1 = input("numero 1: ")
-num2 = input("numero 2: ")
-
-resul = 0
-
-resul = float(num1) + float(num2)
-
-print(resul)
+diccionario = {
+    "suma":"+",    "Suma":"+",    "resta": "-",    "multi": "*",    "divi": "/",    "division": "/",
+    "+":"+",    "sumatoria":"+",    "-": "-",    "*": "*",    "/": "/",    "/": "/"
+}
+print(diccionario["suma"])
+num1 = float(input("numero 1: "))
+num2 = float(input("numero 2: "))
+operacion = diccionario.get(input("+ - / * Dame un operando: "))
+if operacion =="+":
+    print(num1+num2)
+elif operacion =="-":
+    print(num1-num2)
+elif operacion =="/":
+    print(num1/num2)
+elif operacion =="*":
+    print(num1*num2)
+else:
+    print("operador invalido")
