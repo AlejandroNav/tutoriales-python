@@ -1,10 +1,19 @@
-print("hello ")
+for letter in "Hola que tal ":
+    print(letter)
+numeros=["inicio",4,5,6,7,"final"]
+
+for x in numeros:
+    print(x)
+print("====================================")
+for x in range(len(numeros)):
+    print(numeros[x])
+
+print("====================================")
 i=1
 while i<=3:
-    print(i)
+    print(str(i) + " del loop ")
     i += 1
 print("termina el loop aqui")
-
 secret_word = "CUATRO"
 guess = ""
 intentos = 0
