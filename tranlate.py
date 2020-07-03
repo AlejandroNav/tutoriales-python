@@ -28,6 +28,7 @@ print(archivo_empleados.readable())  # te dice si es leible el archivo
 #print(archivo_empleados.readline()) # te da una linea
 empleados = archivo_empleados.readlines() # te da una linea
 print(empleados)
+archivo_empleados.write("\nDAniela - Chofera")
 
 for empledo in empleados:
     print(str(empledo)+ " y trabaja desde hace")
