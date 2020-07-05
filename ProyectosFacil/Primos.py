@@ -1,5 +1,6 @@
 print("Hola bienvenido al programa de numeros primos")
-numero_final = int(input("Dame numero"))
+numero_final = int(input("Dame numero: "))
+print("\n")
 
 
 def checa_numero(numero_checar):
@@ -15,24 +16,25 @@ def divisores(dividendo):
         if numero_final % numero == 0:
             print(str(numero) + " es un numero divisor de " + str(numero_final))
 
-def divisores(dividendo):
-    for numero in range(1, numero_final + 1):
-        if numero_final % numero == 0:
-            print(str(numero) + " es un numero divisor de " + str(numero_final))
 
-def esPrimo(primo_checar):
-    for numero in range(2, numero_final):
-        if numero_final % numero == 0:
-            print(str(numero_final) + " no es un numero primo")
+def es_primo(primo_checar):
+    for numero in range(2, primo_checar):
+        if primo_checar % numero == 0:
             return False
-    else:
-        print(str(numero_final) + " es un numero primo")
-        return True
+    return True
+
+
+def numeros_primos(rango_checar):
+    for numero_prueba in range(2, rango_checar):
+        if es_primo(numero_prueba):
+            print(str(numero_prueba) + " es un numero primo dentro del rango " + str(rango_checar) )
+
 
 if checa_numero(numero_final):
     divisores(numero_final)
-    if esPrimo(numero_final):
-        print("si es verdad")
+    if es_primo(numero_final):
+        print(str(numero_final) + " es un numero primo")
     else:
-        print("no es verda")
-    print("Los numeros primos hasta ese rango")
+        print(str(numero_final) + " no es un numero primo")
+    print("\nLos numeros primos hasta ese rango: \n ")
+    numeros_primos(numero_final)
