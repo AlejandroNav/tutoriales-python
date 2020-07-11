@@ -4,4 +4,10 @@ def factorial(num):     # imprimir un factorial
         suma +=suma*x      # suma al contador la multiplicacion del numero * el contador
     return suma
 
+
+def compound_interest(inversion, termino, interes, periodos): # in teres compuesto a 2 decimales
+    ans = inversion * (1 + interes / periodos) ** (periodos * termino)
+    return round(ans, 2)
+
+
 print(factorial(7))
