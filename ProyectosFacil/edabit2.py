@@ -32,6 +32,20 @@ def mapping(letters):  # crea un diccioanrio con lo que le entra
     return dictionary
 
 
+def correct_stream(user, correct):
+    ans=[]
+    for u in user:
+        if u in correct:
+            ans.append(1)
+        else:
+            ans.append(-1)
+    return ans
+
+print(correct_stream(
+  ["it", "is", "find"],
+  ["it", "is", "fine"]
+))
+print("------------------")
 print(mapping(["p", "s","r", "w"]))
 l1 = [1, 2, 9, 9, 5, 9, 7, 9, 9]
 l2 = [4, 2, 4, 4, 5, 4, 7, 4, 2]
