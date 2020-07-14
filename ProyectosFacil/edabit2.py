@@ -5,9 +5,9 @@ def factorial(num):  # imprimir un factorial
     return suma
 
 
-def compound_interest(inversion, termino, interes, periodos):  # in teres compuesto a 2 decimales
+def compound_interest(inversion, termino, interes, periodos):  # interes compuesto a 2 decimales
     ans = inversion * (1 + interes / periodos) ** (periodos * termino)
-    return round(ans, 2)
+    return round(ans, 2) # el numero y los decimales a redondear
 
 
 def first_last(name):  # regresa el primer y ultimo caracter de un string concatenacion
@@ -46,7 +46,7 @@ def correct_stream(user, correct):
 def integer_boolean(n):  # le das un numero de ceros uno y regresa Trues y falso en un arreglo lista
     lista=[]
     for numero in n:
-        if numero == "1":
+        if numero == "1":       # si es 1 refresa falso
             lista.append(False)
         else:
             lista.append(True)
