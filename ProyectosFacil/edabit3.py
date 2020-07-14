@@ -1,3 +1,6 @@
+from math import ceil
+
+
 def unique_sort(lst):  # recibe una lista
     my_set = set()  # crea uns et vacio, los sets no admiten valores repetidos
     for element in lst:
@@ -24,6 +27,12 @@ def remove_vowels(txt):
 def reverse(txt): # toma un string
     x = txt.swapcase() # cambia los cases
     return x[::-1]  # lo pone al inverso el index de sus componentes con un slice que trabaja con indice negativo
+
+
+def cars_needed(n):
+    return ceil((n/5))
+
+print(cars_needed(17))
 
 print(reverse("Hola mundo Como Estas JUAN"))
 
