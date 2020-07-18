@@ -18,7 +18,7 @@ def remove_vowels(txt):
             ans += letter
     return ans  # return ''.join(char for char in txt if not char in "aeiouAEIOU")
 
-def reverse(txt): # toma un string
+def reversestring(txt): # toma un string
     x = txt.swapcase() # cambia los cases
     return x[::-1]  # lo pone al inverso el index de sus componentes con un slice que trabaja con indice negativo
 
@@ -39,7 +39,13 @@ def is_in_order(arg):
    return list(arg) == sorted(arg) # que si un string estan en orden sus elemntos
 
 
+def reverse(arg):
+    if  isinstance(arg,bool):
+        return not arg
+    else:
+        return "boolean expected"
 
+print(reverse(True))
 
 print(is_in_order("abc"))
 print(is_in_order("edabit"))
@@ -52,6 +58,6 @@ print(get_student_names({
 print(alphanumeric_restriction("Bold"))
 
 print(cars_needed(17))
-print(reverse("Hola mundo Como Estas JUAN"))
+print(reversestring("Hola mundo Como Estas JUAN"))
 print(remove_vowels(frase))
 print(unique_sort2([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]))
