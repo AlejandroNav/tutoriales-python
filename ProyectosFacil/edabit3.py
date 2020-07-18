@@ -53,21 +53,39 @@ def name_shuffle(txt):
     return " ".join(listfinished)      # returns that list as a String
 
 
+def factorial(n):  # regresa un factorial
+    if (n == 1 or n == 0):
+        return 1
+    else:
+        return n * factorial(n - 1);  # de manera revursiva multiplicamos nuestros numeros que forman el factorial
+
+
+def nth_smallest(lst, n):
+    if len(lst) < n:
+        return "none"
+    else:
+        ans=sorted(lst)
+        return ans[n-1]
+
+
+print(nth_smallest([1, 5, 3, 7], 1))
+
+print(factorial(6))
+
 print(name_shuffle("Javier Mariana Raul"))
 
 print(reverse(True))
 
-print(is_in_order("abc"))
 print(is_in_order("edabit"))
 
-print(get_student_names({
-  "Student 1" : "Steve",
-  "Student 2" : "Becky",
-  "Student 3" : "Alexohn"
-}))
+print(get_student_names({"Student 1" : "Steve",  "Student 2" : "Becky",  "Student 3" : "Alexohn"}))
+
 print(alphanumeric_restriction("Bold"))
 
 print(cars_needed(17))
+
 print(reversestring("Hola mundo Como Estas JUAN"))
+
 print(remove_vowels(frase))
+
 print(unique_sort2([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]))
