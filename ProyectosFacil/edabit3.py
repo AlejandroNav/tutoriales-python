@@ -45,6 +45,16 @@ def reverse(arg):
     else:
         return "boolean expected"
 
+
+def name_shuffle(txt):
+    divided = txt.split() # takes the string and splits it into a list
+    reverslist= reversed(divided)  #  returns an iterator that accesses the list in the reverse order
+    listfinished = list(reverslist) # creates a  new list in that order
+    return " ".join(listfinished)      # returns that list as a String
+
+
+print(name_shuffle("Javier Mariana Raul"))
+
 print(reverse(True))
 
 print(is_in_order("abc"))
