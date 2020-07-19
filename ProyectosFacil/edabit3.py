@@ -68,6 +68,24 @@ def nth_smallest(lst, n):
         return ans[n-1]
 
 
+numbers = [1, 2, -3, -4, -5, 1, 4, -5]
+
+
+def distance_home(lst):
+    return abs(sum(lst))
+
+
+def left_digit(num):
+    for cha in num:
+        if cha.isdigit():
+            return cha
+
+
+print(left_digit("TrAdE2W1n95!"))
+
+
+print(distance_home(numbers))
+
 print(nth_smallest([1, 5, 3, 7], 1))
 
 print(factorial(6))
