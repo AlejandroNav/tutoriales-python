@@ -32,7 +32,7 @@ def str_to_int(num):
 
 
 def fact(n):
-    if n <=1:
+    if n <= 1:
         return 1
     else:
         if n <= 1:  # si n es 1 termina el programa y regresa la sumatoria
@@ -40,7 +40,31 @@ def fact(n):
         return n * fact(n - 1)
 
 
+def profit(info):
+    return round((info["sell_price"] - info["cost_price"]) * info["inventory"])
+
+
+def fizz_buzz(num):
+    if num % 15 == 0:
+        return "FizzBuzz"
+    elif num % 5 == 0:
+        return "Fizz"
+    elif num % 3 == 0:
+        return "Buzz"
+    else:
+        return num
+
+
+print(fizz_buzz(5))
+
+print(profit({
+    "cost_price": 32.67,
+    "sell_price": 45.00,
+    "inventory": 1200
+}))
+
 print(fact(6))
+
 print(int_to_str(567))
 
 print(remove_enemies(["Adam", "Emmy", "Tanya", "Emmy"], ["Emmy"]))
