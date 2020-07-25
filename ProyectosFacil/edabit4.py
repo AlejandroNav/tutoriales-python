@@ -55,6 +55,25 @@ def fizz_buzz(num):
         return num
 
 
+def square_areas_difference(r):
+    return (r * 2) ** 2 - (2 * r * r)
+
+
+def list_of_multiples(n, l,):  # takes two numbers as arguments (num, length) and returns a list of multiples of num up to length.
+    listnum = []
+    for number in range(1, l + 1):
+         listnum.append(number*n)
+    return listnum
+
+def format_date(d): #Create a function that converts a date formatted as MM/DD/YYYY to YYYYDDMM.
+        x = d.split("/")
+        return x[2]+x[1]+x[0]
+
+print(format_date("11/12/2019"))
+
+print(list_of_multiples(7, 5))
+print(square_areas_difference(5))
+
 print(fizz_buzz(5))
 
 print(profit({
