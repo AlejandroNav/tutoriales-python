@@ -92,4 +92,4 @@ print(sum_numbers(12))
 
 print(steps_to_convert("sdgsFGSEdDdsfSD"))
 
-print(mean(12345))
+print( "El promedio de los digitos es " + str(mean(12345)))
