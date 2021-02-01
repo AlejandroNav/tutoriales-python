@@ -1,9 +1,24 @@
-print('Hello world!')
-print('What is your name?')    # ask for their name
-myName = input()
-print('It is good to meet you, ' + myName)
-print('The length of your name is:')
-print(len(myName))
+myName = "joven"
 print('What is your age?')    # ask for their age
 myAge = input()
-print('You will be ' + str(int(myAge) + 1) + ' in a year.')
+if int(myAge) >= 70:
+    print("The future is now old man")
+    myName = "miedad"
+print(myName)
+
+
+frutero = ['apple', 'banana', 'cherry']
+for frutas in frutero:
+    print(frutas)
+
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1

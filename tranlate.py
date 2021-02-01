@@ -34,3 +34,5 @@ for empledo in empleados:
     print(str(empledo)+ " y trabaja desde hace")
 
 archivo_empleados.close()
+
+while
