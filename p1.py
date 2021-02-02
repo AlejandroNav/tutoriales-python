@@ -29,3 +29,6 @@ while i < 6:
 
 print(random.randint(1,999))
 
+def AgePlus(x):
+    return x + 18
+print('Hello', ' your age is ', AgePlus(int(myAge)))
