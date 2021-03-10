@@ -51,3 +51,7 @@ print(divBy10(7))
 print(divBy10(5))
 print(divBy10(0))
 print(divBy10(120))
+
+spam = ['cat', 'bat', 'rat', 'elephant']
+
+print(spam[3])
