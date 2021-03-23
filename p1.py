@@ -8,7 +8,7 @@ myAge = input()
 
 if int(myAge) >= 70:
     print("The future is now old man")
-    myName = "miedad"
+    myName = "miedad menor de 70"
 print(myName)
 
 frutero = ['apple', 'banana', 'cherry']
