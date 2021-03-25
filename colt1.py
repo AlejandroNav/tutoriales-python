@@ -26,14 +26,14 @@ elif player1 == "love":
     elif player2 == "paper":
         print("Jugador 2 gana con " + player2)
 
-for item in range(1, 21):
+for item in range(1, 2):
 
     print(item)
 
-for item in range(1, 10):
+for item in range(1, 11):
     print("\U0001f600"*item)
 
 times = 11
 while times >= 1:
-    print("\U0001f600"*item)
+    print("\U0001f600"*times)
     times -=1
