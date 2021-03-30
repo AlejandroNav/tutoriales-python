@@ -10,3 +10,7 @@ for item in tasks:
 
 print('lista despues del ciclo de pop ; ')
 print(tasks)
+
+tasks.remove(7)
+print('lista despues del remove 7 ; ')
+print(tasks)
